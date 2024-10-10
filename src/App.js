@@ -14,7 +14,7 @@ function App() {
         {/* Hotbar */}
         <Navbar />
         <h1>TEST</h1>
-
+        <h2>TEST2</h2>
         {/* Contenu dynamique */}
         <Routes>
           <Route path="/profile" element={<Profile />} />
