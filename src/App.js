@@ -13,6 +13,7 @@ function App() {
       <div className="App">
         {/* Hotbar */}
         <Navbar />
+        <h1>TEST</h1>
 
         {/* Contenu dynamique */}
         <Routes>
