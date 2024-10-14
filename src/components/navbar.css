@@ -1,36 +1,76 @@
-/* src/components/Navbar.css */
+/* src/components/navbar.css */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f3f3;
+  padding: 15px 30px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1); /* Modern shadow effect */
+  border-bottom-left-radius: 40px; /* Rounded lower left corner */
+  border-bottom-right-radius: 20px; /* Rounded lower right corner */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-brand h2 {
+  color: orange;
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
+  color: orange;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.navbar-links a:hover {
+  color: #ff8c00;
+}
+
+.navbar-links a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: orange;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.navbar-links a:hover::after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
     padding: 10px 20px;
   }
-  
-  .navbar-brand h2 {
-    color: white;
-    margin: 0;
-  }
-  
+
   .navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
   }
-  
-  .navbar-links li {
-    display: inline;
-  }
-  
-  .navbar-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar-links a:hover {
-    color: #ffcc00;
-  }
-  
+}
