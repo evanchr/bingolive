@@ -21,6 +21,9 @@ function Navbar() {
         <li>
           <Link to="/events">Événements</Link>
         </li>
+        <li>
+          <Link to="/cartons">Cartons</Link>
+        </li>
       </ul>
     </nav>
   );

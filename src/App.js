@@ -6,6 +6,7 @@ import Profile from './pages/Profile'; // On va créer ces pages
 import Store from './pages/Store';
 import Game from './pages/Game';
 import Events from './pages/Events';
+import Cartons from './pages/Cartons';
 
 function App() {
   return (
@@ -13,14 +14,13 @@ function App() {
       <div className="App">
         {/* Hotbar */}
         <Navbar />
-        <h1>TEST</h1>
-        <h2>TEST2</h2>
         {/* Contenu dynamique */}
         <Routes>
           <Route path="/profile" element={<Profile />} />
           <Route path="/store" element={<Store />} />
           <Route path="/game" element={<Game />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/cartons" element={<Cartons />} />
         </Routes>
       </div>
     </Router>
