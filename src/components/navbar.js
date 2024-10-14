@@ -6,7 +6,8 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-      <img src={`${process.env.PUBLIC_URL}/logobingo.png`} alt="Logo" />
+        
+      <Link to="/accueil  "><img src={`${process.env.PUBLIC_URL}/logobingo.png`} alt="Logo" /></Link>
       </div>
       <ul className="navbar-links">
         <li>

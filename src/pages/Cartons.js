@@ -13,9 +13,9 @@ function Cartons() {
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <h1>Cartons</h1>
       <p>Génère un carton exemple</p>
-      
-      {/* Render the Carton component */}
       <Carton key={cartonKey} />
+      {/* Render the Carton component */}
+      
       <button onClick={nouveauCarton} style={{ marginTop: '20px', padding: '10px 20px', fontSize: '16px', backgroundColor: 'orange', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
         Générer un nouveau carton
       </button>

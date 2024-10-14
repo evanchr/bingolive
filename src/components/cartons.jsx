@@ -18,15 +18,18 @@ const AfficherCarton = ({ carton }) => {
   );
 };
 
-const GenererNb = (min,max) => {
-  const  tab = []
-
-  for (let i = 0; i < (max -min) ; i ++){
-    tab[i] = min + i
+const GenererNb = (min, max) => {
+  const tab = [];
+  
+  // Inclure min et max
+  for (let i = min; i <= max; i++) {
+    tab.push(i);
   }
-  const indexAl = Math.floor(Math.random() * (max -min))
-  return tab[indexAl]
-}
+  
+  const indexAl = Math.floor(Math.random() * tab.length);
+  return tab[indexAl];
+};
+
 
 // Permet de choisir un élement aléatoirement dans un set
 const elemAlSet = (set) => {

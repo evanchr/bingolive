@@ -7,6 +7,7 @@ import Store from './pages/Store';
 import Game from './pages/Game';
 import Events from './pages/Events';
 import Cartons from './pages/Cartons';
+import Accueil from './pages/Accueil';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Navbar />
         {/* Contenu dynamique */}
         <Routes>
+          <Route path="/accueil" element={<Accueil />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/store" element={<Store />} />
           <Route path="/game" element={<Game />} />
