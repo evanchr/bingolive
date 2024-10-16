@@ -1,0 +1,122 @@
+{
+    "Asso": [
+        {
+          "idA": 1,
+          "nom": "Association Loto Passion",
+          "idReferent": 1,
+          "limite_event": 5
+        },
+        {
+          "idA": 2,
+          "nom": "Club des Amis du Loto",
+          "idReferent": 2,
+          "limite_event": 3
+        }
+      ],
+      "Compte": [
+        {
+          "idCompte": 1,
+          "prenom": "Jean",
+          "nom": "Dupont",
+          "email": "jean.dupont@email.com",
+          "type": "animateur",
+          "nb_actuel_carton": 3
+        },
+        {
+          "idCompte": 2,
+          "prenom": "Marie",
+          "nom": "Martin",
+          "email": "marie.martin@email.com",
+          "type": "joueur",
+          "nb_actuel_carton": 2
+        }
+      ],
+      "Event": [
+        {
+          "idEvent": 1,
+          "nom_Event": "Grand Loto de Printemps",
+          "date": "2024-04-15",
+          "lieu": "Salle des fêtes",
+          "nom_asso": "Association Loto Passion",
+          "id_Animateur": 1,
+          "NbPartie": 3
+        },
+        {
+          "idEvent": 2,
+          "nom_Event": "Loto Solidaire",
+          "date": "2024-05-20",
+          "lieu": "Gymnase municipal",
+          "nom_asso": "Club des Amis du Loto",
+          "id_Animateur": 1,
+          "NbPartie": 2
+        }
+      ],
+      "Partie": [
+        {
+          "idPartie": 1,
+          "nbManches": 3,
+          "idEvent": 1
+        },
+        {
+          "idPartie": 2,
+          "nbManches": 2,
+          "idEvent": 1
+        }
+      ],
+      "Ligne": [
+        {
+          "idLigne": 1,
+          "Col1": 3, "Col2": 14, "Col3": 27, "Col4": 33, "Col5": 47,
+          "Col6": 52, "Col7": 61, "Col8": 72, "Col9": 85
+        },
+        {
+          "idLigne": 2,
+          "Col1": 9, "Col2": 18, "Col3": 25, "Col4": 39, "Col5": 45,
+          "Col6": 58, "Col7": 69, "Col8": 78, "Col9": 90
+        },
+        {
+          "idLigne": 3,
+          "Col1": 7, "Col2": 16, "Col3": 29, "Col4": 37, "Col5": 49,
+          "Col6": 55, "Col7": 67, "Col8": 76, "Col9": 81
+        }
+      ],
+      "Carton": [
+        {
+          "idCarton": 1,
+          "id_Ligne1": 1,
+          "id_Ligne2": 2,
+          "id_Ligne3": 3,
+          "type": "standard"
+        }
+      ],
+      "Lot": [
+        {
+          "idLot": 1,
+          "valeur": 100,
+          "nom": "Bon d'achat"
+        },
+        {
+          "idLot": 2,
+          "valeur": 50,
+          "nom": "Panier garni"
+        }
+      ],
+      "Manche": [
+        {
+          "idManche": 1,
+          "tirage": "1,15,27,38,49,60,72,85",
+          "type": "quine",
+          "idLot": 1,
+          "idGagnant": 2,
+          "idPartie": 1
+        },
+        {
+          "idManche": 2,
+          "tirage": "3,14,25,36,47,58,69,80,90",
+          "type": "double_quine",
+          "idLot": 2,
+          "idGagnant": null,
+          "idPartie": 1
+        }
+      ]
+}
