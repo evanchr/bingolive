@@ -5,6 +5,7 @@ function Accueil() {
   return (
     <div>
       <h1>Bienvenue sur BingoLive</h1>
+      <h1>Bienvenue sur BingoLive</h1>
     </div>
   );
 }
