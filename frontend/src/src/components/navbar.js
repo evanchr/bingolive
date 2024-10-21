@@ -7,7 +7,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-brand">
         
-      <Link to="/accueil  "><img src={`${process.env.PUBLIC_URL}/logobingowhite.png`} alt="Logo" /></Link>
+      <Link to="/accueil  "><img src={`${process.env.PUBLIC_URL}/logobingo.png`} alt="Logo" /></Link>
       </div>
       <ul className="navbar-links">
         <li>
@@ -25,10 +25,6 @@ function Navbar() {
         <li>
           <Link to="/cartons">Cartons</Link>
         </li>
-        <li>
-          <Link to="/inscription">Inscription</Link>
-        </li>
-
       </ul>
     </nav>
   );

@@ -8,7 +8,6 @@ import Game from './pages/Game';
 import Events from './pages/Events';
 import Cartons from './pages/Cartons';
 import Accueil from './pages/Accueil';
-import Inscription from './pages/Inscription';
 
 function App() {
   return (
@@ -24,8 +23,8 @@ function App() {
           <Route path="/game" element={<Game />} />
           <Route path="/events" element={<Events />} />
           <Route path="/cartons" element={<Cartons />} />
-          <Route path="/inscription" elemement = {<Inscription/>} />
         </Routes>
+       
       </div>
     </Router>
   );
