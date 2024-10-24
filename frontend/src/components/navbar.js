@@ -28,6 +28,9 @@ function Navbar() {
         <li>
           <Link to="/inscription">Inscription</Link>
         </li>
+        <li>
+          <Link to="/login">Login</Link>
+        </li>
 
       </ul>
     </nav>
